@@ -7,7 +7,7 @@ import {
   Experience,
   CV,
   Feedbacks,
-  Hero,
+  Hero1,
   Navbar,
   Tech,
   Works,
@@ -21,7 +21,7 @@ const App = () => {
       <div className="relative z-0 bg-primary">
         <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
           <Navbar />
-          <Hero />
+          <Hero1 />
         </div>
         <About />
         <Tech />

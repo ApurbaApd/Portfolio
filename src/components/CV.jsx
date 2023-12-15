@@ -1,17 +1,11 @@
-import React from "react"
-import { motion } from "framer-motion"
-
-import { styles } from "../styles"
-import { SectionWrapper } from "../hoc"
-import { fadeIn, textVariant } from "../utils/motion"
-import { CVDuncan, myWords } from "../constants"
+import React from "react";
+import { styles } from "../styles";
+import { SectionWrapper } from "../hoc";
+import { CVDuncan, myWords } from "../constants";
 import CVDoc from "../assets/Apurba.pdf";
 
-const Card = ({ index, text, name, designation, company, image }) => (
-  <motion.div
-    variants={fadeIn("right", "spring", index * 0.5, 0.75)}
-    className="bg-black-200 p-10 rounded-3xl xs:w-[320px] w-full"
-  >
+const Card = ({ text, name, designation, company, image }) => (
+  <div className="bg-black-200 p-10 rounded-3xl xs:w-[320px] w-full">
     <p className="text-white font-black text-[48px]">"</p>
 
     <div className="mt-1">
@@ -34,31 +28,24 @@ const Card = ({ index, text, name, designation, company, image }) => (
         />
       </div>
     </div>
-  </motion.div>
-)
+  </div>
+);
 
 const CV = () => {
   return (
     <div className="bg-black-100 rounded-[20px]">
-      <div
-        className={`bg-tertiary rounded-2xl ${styles.padding} min-h-[300px]`}
-      >
-        <motion.div variants={textVariant()}>
+      <div className={`bg-tertiary rounded-2xl ${styles.padding} min-h-[300px]`}>
+        <div>
           <p className={styles.sectionSubText}>For Viewer</p>
           <h2 className={styles.sectionHeadText}>My CV.</h2>
-        </motion.div>
+        </div>
       </div>
-      <div
-        className={`-mt-20 pb-14 ${styles.paddingX} flex flex-wrap gap-7 justify-center`}
-      >
-        {myWords.map((myWords, index) => (
-          <Card key={myWords.name} index={index} {...myWords} />
+      <div className={`-mt-20 pb-14 ${styles.paddingX} flex flex-wrap gap-7 justify-center`}>
+        {myWords.map((myWord, index) => (
+          <Card key={index} {...myWord} />
         ))}
 
-        <motion.div
-          variants={fadeIn("right", "spring", 1 * 0.5, 0.75)}
-          className="bg-black-200 p-10 rounded-3xl xs:w-[640px] w-full"
-        >
+        <div className="bg-black-200 p-10 rounded-3xl xs:w-[640px] w-full">
           <div className="flex min-[850px]:flex-row flex-col justify-around items-center">
             <img src={CVDuncan} alt="CVDuncan" className="w-[250px]" />
 
@@ -68,10 +55,10 @@ const CV = () => {
               </button>
             </a>
           </div>
-        </motion.div>
+        </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default SectionWrapper(CV, "cv")
+export default SectionWrapper(CV, "cv");
