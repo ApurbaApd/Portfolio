@@ -11,6 +11,7 @@ import {
   Navbar,
   Tech,
   Works,
+  Skill,
   StarsCanvas,
   Footer,
 } from "./components";
@@ -24,6 +25,7 @@ const App = () => {
           <Hero1 />
         </div>
         <About />
+        <Skill/>
         <Tech />
         <Experience />
         <Works />

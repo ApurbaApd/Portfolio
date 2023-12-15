@@ -4,6 +4,9 @@ import creator from "./creator.png";
 import mobile from "./mobile.png";
 import web from "./web.png";
 import github from "./github.png";
+import leetcode from "./Leetcode.jpg"
+import linkedin from "./linkedin.png";
+import x from "./X.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 
@@ -30,6 +33,7 @@ import tesla from "./company/tesla.png";
 import dgp from "./company/dgp.png";
 
 import me from "./me.jpg";
+import DS from "./DS.jpeg";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
@@ -49,6 +53,9 @@ export {
   mobile,
   web,
   github,
+  leetcode,
+  linkedin,
+  x,
   menu,
   close,
   css,
@@ -77,4 +84,5 @@ export {
   dashboard,
   ecom,
   newgram,
+  DS,
 };

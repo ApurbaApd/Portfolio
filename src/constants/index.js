@@ -30,6 +30,7 @@ import {
   ecom,
   dashboard,
   me,
+  DS,
   CV_Duncan,
 } from "../assets";
 
@@ -39,6 +40,11 @@ export const navLinks = [
   {
     id: "about",
     title: "About Me",
+  },
+  {
+    id:"skill",
+    title:"Skills"
+
   },
   {
     id: "work",
@@ -67,6 +73,11 @@ const services = [
   {
     title: "Backend Developer",
     icon: backend,
+  },
+  {
+    title:"Data Science",
+    icon: DS,
+
   },
   {
     title: "Content Creator",
