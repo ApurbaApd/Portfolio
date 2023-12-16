@@ -32,7 +32,7 @@ import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 import dgp from "./company/dgp.png";
 
-import me from "./me.jpg";
+import me from "./me.jpeg";
 import DS from "./DS.jpeg";
 
 import carrent from "./carrent.png";

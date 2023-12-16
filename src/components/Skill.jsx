@@ -41,7 +41,7 @@ const Skill = () => {
     return (
         <>
             <motion.div variants={textVariant()}>
-                <p className={styles.sectionHeadText}>Skills</p>
+                <p className={styles.sectionHeadText}>My Skills</p>
                 <p className="text-white">Python || SQL || ReactJS || JavaScript || NodeJs || ExpressJS || MongoDB </p>
             </motion.div>
             <div className="mt-20 flex flex-wrap gap-10">

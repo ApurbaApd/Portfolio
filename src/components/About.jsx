@@ -13,7 +13,7 @@ const About = () => {
     <>
       
         <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview</h2>
+        <h2 className={styles.sectionHeadText}>Let me Introduce myself</h2>
       <div className="flex items-center min-[1000px]:flex-row flex-col-reverse">
         <motion.p
           variants={fadeIn("", "", 0.1, 1)}
@@ -54,7 +54,7 @@ const About = () => {
               <img
                 src={me}
                 alt="MyPhoto"
-                className="w-59 h-59 "
+                className="w-59 h-65 "
               />
             </div>
           </motion.div>
