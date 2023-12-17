@@ -11,8 +11,8 @@ import { fadeIn, textVariant } from "../utils/motion";
 const About = () => {
   return (
     <>
-      
-        <p className={styles.sectionSubText}>Introduction</p>
+       
+        <p className={styles.sectionSubText } style={{ borderTop:"2px solid red"}}>Introduction</p>
         <h2 className={styles.sectionHeadText}>Let me Introduce myself</h2>
       <div className="flex items-center min-[1000px]:flex-row flex-col-reverse">
         <motion.p

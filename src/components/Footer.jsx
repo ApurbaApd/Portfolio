@@ -3,7 +3,7 @@ import { logo, github, leetcode, linkedin, x } from "../assets";
 
 const Footer = () => {
   return (
-    <div className="bg-purple-400 sm:px-16 px-6 sm:py-8 py-6 min-h-[80px] mt-20 relative border-2 border-red-500">
+    <div className="bg-purple-400 sm:px-16 px-6 sm:py-8 py-6 min-h-[80px] mt-20 relative border-t-2 border-red-600">
       <div className="flex justify-center gap-3">
                <a href="https://github.com/ApurbaApd" alt="GitHub" target="_blank" rel="noopener noreferrer">
           <img src={github} alt="GitHub" className="w-10 h-10" />
